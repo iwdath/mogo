@@ -284,6 +284,95 @@ a.menu-btn:hover:after {
   letter-spacing: .07em;
 }
 
+.about-us-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 90px;
+}
+
+.about-us-title h3 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.about-us-title h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.about-us-hr {
+  width: 60px;
+  height: 3px;
+  background: #f38181;
+  border: none;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+
+.about-us-title p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+  width: 960px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.about-us-img {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 110px;
+}
+
+.background-img {
+  position: relative;
+  background: #95e1d3;
+}
+
+.transform-img {
+  z-index: 1;
+}
+
+.img-gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  background: rgba(243, 129, 129, .9);
+  background: -moz-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243, 129, 129, 1)), color-stop(100%, rgba(252, 227, 138, .9)));
+  background: -webkit-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  background: -o-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  background: -ms-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  background: linear-gradient(to bottom, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=0);
+}
+
+.transform-img,
+.img-gradient {
+  transition: .3s ease;
+}
+
+.background-img:hover .transform-img,
+.background-img:hover .img-gradient {
+  transform: translate(-10px, -10px);
+}
+
+.background-img:hover .img-gradient {
+  opacity: 1;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1200px;
@@ -297,6 +386,14 @@ a.menu-btn:hover:after {
 
   .progressbar {
     width: 220px;
+  }
+
+  .about-us-title p {
+    width: 830px;
+  }
+
+  .about-us-img .transform-img {
+    width: 305px;
   }
 }
 
@@ -332,6 +429,18 @@ a.menu-btn:hover:after {
 
   .progressbar-number {
     font-size: 20px;
+  }
+
+  .about-us-title h2 {
+    font-size: 25px;
+  }
+
+  .about-us-title p {
+    width: 620px;
+  }
+
+  .about-us-img .transform-img {
+    width: 228px;
   }
 }
 
@@ -375,6 +484,14 @@ a.menu-btn:hover:after {
 
   .progressbar-title {
     margin-top: 10px;
+  }
+
+  .about-us-title p {
+    width: 500px;
+  }
+
+  .about-us-img .transform-img {
+    width: 170px;
   }
 }
 
@@ -442,6 +559,22 @@ a.menu-btn:hover:after {
   }
 
   .progressbar {
+    width: 100%;
+  }
+
+  .about-us-title p {
+    width: 90%;
+  }
+
+  .about-us-img {
+    flex-direction: column;
+  }
+
+  .about-us-img .background-img:nth-child(-n+2) {
+    margin-bottom: 35px;
+  }
+
+  .about-us-img .transform-img {
     width: 100%;
   }
 }
