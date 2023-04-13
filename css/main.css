@@ -373,6 +373,47 @@ a.menu-btn:hover:after {
   opacity: 1;
 }
 
+.stats {
+  background: #95e1d3;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stats-wrapper {
+  display: flex;
+  justify-content: space-between
+}
+
+.stats-line {
+  display: flex;
+}
+
+.stats-item {
+  padding: 85px 57.7px;
+}
+
+.stats-item {
+  border-right: solid 1px #b5eae0;
+}
+
+.stats-line:nth-child(1) .stats-item:nth-child(1) {
+  border-left: solid 1px #b5eae0;
+}
+
+.stats-item h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stats-item p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1200px;
@@ -394,6 +435,10 @@ a.menu-btn:hover:after {
 
   .about-us-img .transform-img {
     width: 305px;
+  }
+
+  .stats-item {
+    padding: 85px 33.7px;
   }
 }
 
@@ -441,6 +486,14 @@ a.menu-btn:hover:after {
 
   .about-us-img .transform-img {
     width: 228px;
+  }
+
+  .stats-item {
+    padding: 85px 12px;
+  }
+
+  .stats-item h2 {
+    font-size: 60px;
   }
 }
 
@@ -492,6 +545,28 @@ a.menu-btn:hover:after {
 
   .about-us-img .transform-img {
     width: 170px;
+  }
+
+  .stats-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 0;
+  }
+
+  .stats-line:nth-child(1) {
+    margin-bottom: 35px;
+  }
+
+  .stats-line:nth-child(2) .stats-item:nth-child(1) {
+    border-left: solid 1px #b5eae0;
+  }
+
+  .stats-item {
+    padding: 0 20px;
+  }
+
+  .stats-item h2 {
+    font-size: 45px;
   }
 }
 
@@ -577,6 +652,10 @@ a.menu-btn:hover:after {
   .about-us-img .transform-img {
     width: 100%;
   }
+
+  .stats-item {
+    padding: 0 10px;
+  }
 }
 
 @media screen and (max-width: 475px) {
@@ -596,5 +675,27 @@ a.menu-btn:hover:after {
 
   .header-title h1 {
     font-size: 44px;
+  }
+
+  .stats-line:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .stats-line {
+    flex-direction: column;
+  }
+
+  .stats-line:nth-child(1) .stats-item:nth-child(1),
+  .stats-line:nth-child(2) .stats-item:nth-child(1) {
+    border: none;
+  }
+
+  .stats-line:nth-child(1) .stats-item,
+  .stats-line:nth-child(2) .stats-item:nth-child(1) {
+    margin-bottom: 25px;
+  }
+
+  .stats-item {
+    border: none;
   }
 }
