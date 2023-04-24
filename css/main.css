@@ -284,14 +284,21 @@ a.menu-btn:hover:after {
   letter-spacing: .07em;
 }
 
-.about-us-title {
+.about-us {
+  background: #fff;
+}
+
+.section-title {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.about-us-title {
   padding-top: 90px;
 }
 
-.about-us-title h3 {
+.section-title h3 {
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
   font-weight: 400;
@@ -299,24 +306,28 @@ a.menu-btn:hover:after {
   margin-bottom: 12px;
 }
 
-.about-us-title h2 {
+.section-title h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #333;
+  text-align: center;
 }
 
-.about-us-hr {
+.section-hr {
   width: 60px;
   height: 3px;
   background: #f38181;
   border: none;
   margin-top: 35px;
+}
+
+.about-us-hr {
   margin-bottom: 45px;
 }
 
-.about-us-title p {
+.section-title p {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -414,6 +425,68 @@ a.menu-btn:hover:after {
   font-weight: 400;
 }
 
+.services {
+  background: #fff;
+}
+
+.services-title {
+  padding-top: 110px;
+}
+
+.services-hr {
+  margin-bottom: 60px;
+}
+
+.services-cards {
+  padding-bottom: 120px;
+}
+
+.services-column {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.services-cards-hr {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  border: none;
+  margin: 48px 0;
+}
+
+.services-card {
+  display: flex;
+  position: relative;
+}
+
+.services-card svg {
+  position: relative;
+  top: 5px;
+}
+
+.services-card-title {
+  margin-left: 25px;
+}
+
+.services-card-title h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+}
+
+.services-card-title p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+  line-height: 1.5em;
+  width: 290px;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1200px;
@@ -429,7 +502,7 @@ a.menu-btn:hover:after {
     width: 220px;
   }
 
-  .about-us-title p {
+  .section-title p {
     width: 830px;
   }
 
@@ -439,6 +512,10 @@ a.menu-btn:hover:after {
 
   .stats-item {
     padding: 85px 33.7px;
+  }
+
+  .services-card-title p {
+    width: 220px;
   }
 }
 
@@ -476,11 +553,11 @@ a.menu-btn:hover:after {
     font-size: 20px;
   }
 
-  .about-us-title h2 {
+  .section-title h2 {
     font-size: 25px;
   }
 
-  .about-us-title p {
+  .section-title p {
     width: 620px;
   }
 
@@ -494,6 +571,10 @@ a.menu-btn:hover:after {
 
   .stats-item h2 {
     font-size: 60px;
+  }
+
+  .services-card-title p {
+    width: 140px;
   }
 }
 
@@ -539,7 +620,7 @@ a.menu-btn:hover:after {
     margin-top: 10px;
   }
 
-  .about-us-title p {
+  .section-title p {
     width: 500px;
   }
 
@@ -567,6 +648,43 @@ a.menu-btn:hover:after {
 
   .stats-item h2 {
     font-size: 45px;
+  }
+
+  .services-column {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0;
+  }
+
+  .services-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-card svg {
+    position: static;
+  }
+
+  .services-card-title {
+    margin: 10px 0 0;
+  }
+
+  .services-card-title p {
+    width: 300px;
+  }
+
+  .services-card1,
+  .services-card2,
+  .services-card3,
+  .services-card4,
+  .services-card5 {
+    margin-bottom: 30px;
+  }
+
+  .services-cards-hr {
+    display: none;
   }
 }
 
@@ -637,7 +755,7 @@ a.menu-btn:hover:after {
     width: 100%;
   }
 
-  .about-us-title p {
+  .section-title p {
     width: 90%;
   }
 
@@ -665,6 +783,14 @@ a.menu-btn:hover:after {
 
   .header-title h1 {
     font-size: 55px;
+  }
+
+  .services-card {
+    width: 80%;
+  }
+
+  .services-card-title p {
+    width: 100%;
   }
 }
 
@@ -697,5 +823,9 @@ a.menu-btn:hover:after {
 
   .stats-item {
     border: none;
+  }
+
+  .services-card {
+    width: 100%;
   }
 }
