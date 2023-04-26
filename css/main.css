@@ -487,6 +487,56 @@ a.menu-btn:hover:after {
   width: 290px;
 }
 
+.design {
+  background: #999;
+  height: 848px;
+}
+
+.design-img {
+  background: url(../img/design-bg.jpg) no-repeat top;
+  height: 848px;
+}
+
+.design-bg {
+  background: rgba(255, 255, 255, .85);
+  height: 848px;
+}
+
+.design-bg .container {
+  height: 848px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.design-devices {
+  position: relative;
+}
+
+.design-title {
+  padding-top: 110px;
+}
+
+.tablet {
+  position: relative;
+  right: 30px;
+}
+
+.phone {
+  position: absolute;
+  bottom: -90px;
+  right: -130px;
+}
+
+.we-do-title {
+  padding-top: 110px;
+}
+
+.we-do-hr {
+  margin-bottom: 45px;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1200px;
@@ -686,6 +736,16 @@ a.menu-btn:hover:after {
   .services-cards-hr {
     display: none;
   }
+
+  .tablet {
+    width: 420px;
+  }
+
+  .phone {
+    width: 240px;
+    bottom: -75px;
+    right: -60px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -774,6 +834,17 @@ a.menu-btn:hover:after {
   .stats-item {
     padding: 0 10px;
   }
+
+  .tablet {
+    right: 0;
+    width: 80%;
+  }
+
+  .phone {
+    width: 50%;
+    right: -5%;
+    bottom: -17%;
+  }
 }
 
 @media screen and (max-width: 475px) {
@@ -791,6 +862,10 @@ a.menu-btn:hover:after {
 
   .services-card-title p {
     width: 100%;
+  }
+
+  .design-title {
+    padding-top: 200px;
   }
 }
 
