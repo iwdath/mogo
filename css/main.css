@@ -732,8 +732,19 @@ a.menu-btn:hover:after {
 }
 
 .team-card br {
-    display: none;
-  }
+  display: none;
+}
+
+.logos {
+  background: #f8f8f8;
+}
+
+.logos .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10px;
+}
 
 @media screen and (max-width: 1400px) {
   .container {
@@ -857,6 +868,10 @@ a.menu-btn:hover:after {
 
   .review-title p {
     width: 350px;
+  }
+
+  .logos img {
+    width: 12%;
   }
 }
 
@@ -1019,6 +1034,16 @@ a.menu-btn:hover:after {
   .team-card br {
     display: inline;
   }
+
+  .logos .container {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 60px 0;
+  }
+
+  .logos img {
+    width: 130px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1141,6 +1166,10 @@ a.menu-btn:hover:after {
 
   .team-card br {
     display: none;
+  }
+
+  .logos img {
+    width: 42%;
   }
 }
 
