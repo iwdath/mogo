@@ -746,6 +746,18 @@ a.menu-btn:hover:after {
   padding: 60px 10px;
 }
 
+.work-title {
+  padding-top: 110px;
+}
+
+.work-hr {
+  margin-bottom: 45px;
+}
+
+.work-title p {
+  margin-bottom: 100px;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1200px;
@@ -1042,7 +1054,7 @@ a.menu-btn:hover:after {
   }
 
   .logos img {
-    width: 130px;
+    width: 25%;
   }
 }
 
@@ -1166,10 +1178,6 @@ a.menu-btn:hover:after {
 
   .team-card br {
     display: none;
-  }
-
-  .logos img {
-    width: 42%;
   }
 }
 
