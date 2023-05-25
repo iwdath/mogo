@@ -748,6 +748,7 @@ a.menu-btn:hover:after {
 
 .work-title {
   padding-top: 110px;
+  padding-bottom: 100px;
 }
 
 .work-hr {
@@ -755,7 +756,27 @@ a.menu-btn:hover:after {
 }
 
 .work-title p {
-  margin-bottom: 100px;
+  margin-bottom: 0;
+}
+
+.work-bg {
+  background: #f8f8f8;
+  height: 780px;
+}
+
+.work-bg-img {
+  background: url(../img/work-bg.jpg) no-repeat top;
+  height: 780px;
+}
+
+.second-review-icon {
+  border: none;
+  padding: 0;
+}
+
+.second-reviews-wrapper {
+  padding-top: 100px;
+  padding-bottom: 130px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -803,6 +824,9 @@ a.menu-btn:hover:after {
     width: 600px;
   }
 
+  .second-review-title p {
+    width: 550px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -884,6 +908,10 @@ a.menu-btn:hover:after {
 
   .logos img {
     width: 12%;
+  }
+
+  .second-review-title p {
+    width: 300px;
   }
 }
 
@@ -1018,6 +1046,11 @@ a.menu-btn:hover:after {
 
   .reviews-wrapper {
     padding: 70px 0;
+  }
+
+  .second-reviews-wrapper {
+    padding-top: 100px;
+    padding-bottom: 130px;
   }
  
   .review-content {
