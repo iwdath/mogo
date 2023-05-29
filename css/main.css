@@ -491,25 +491,24 @@ a.menu-btn:hover:after {
 
 .design {
   background: #999;
-  height: 848px;
+}
+
+.design-hr {
+  margin-bottom: 45px;
 }
 
 .design-img {
   background: url(../img/design-bg.jpg) no-repeat top;
-  height: 848px;
 }
 
 .design-bg {
   background: rgba(255, 255, 255, .85);
-  height: 848px;
 }
 
 .design-bg .container {
-  height: 848px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
 .design-devices {
@@ -779,6 +778,79 @@ a.menu-btn:hover:after {
   padding-bottom: 130px;
 }
 
+.clients {
+  background: #999;
+}
+
+.clients-img {
+  background: url(../img/clients-bg.jpg) no-repeat top;
+}
+
+.clients-bg {
+  background: rgba(255, 255, 255, .85);
+}
+
+.clients .container {
+  padding: 110px 40px 130px;
+}
+
+.clients-hr {
+  margin-bottom: 90px;
+}
+
+.clients-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  justify-content: space-between;
+}
+
+.clients-card {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.clients-card-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  width: 400px;
+  position: relative;
+  top: 10px;
+}
+
+.clients-card-content h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.clients-card-content h6 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.clients-card-hr {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.clients-card-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+  line-height: 1.5em;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1200px;
@@ -826,6 +898,10 @@ a.menu-btn:hover:after {
 
   .second-review-title p {
     width: 550px;
+  }
+
+  .clients-card-content {
+    width: 280px;
   }
 }
 
@@ -912,6 +988,14 @@ a.menu-btn:hover:after {
 
   .second-review-title p {
     width: 300px;
+  }
+
+  .clients .container {
+    padding: 110px 0 130px;
+  }
+
+  .clients-card-content {
+    width: 200px;
   }
 }
 
@@ -1089,6 +1173,18 @@ a.menu-btn:hover:after {
   .logos img {
     width: 25%;
   }
+
+  .clients-img {
+    background-size: cover;
+  }
+
+  .clients-cards {
+    justify-content: center;
+  }
+
+  .clients-card-content {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1212,6 +1308,18 @@ a.menu-btn:hover:after {
   .team-card br {
     display: none;
   }
+
+  .clients-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients-card-content {
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 475px) {
@@ -1231,8 +1339,8 @@ a.menu-btn:hover:after {
     width: 100%;
   }
 
-  .design-title {
-    padding-top: 200px;
+  .clients-card-content {
+    width: 100%;
   }
 }
 
