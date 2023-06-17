@@ -29,13 +29,15 @@ a {
 }
 
 .gradient {
-  background: rgba(243, 129, 129, .9);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243, 129, 129, 1)), color-stop(100%, rgba(252, 227, 138, .9)));
-  background: -o-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
-  background: linear-gradient(to bottom, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=0);
+  background: rgb(243, 129, 129, .9);
+  background: linear-gradient(180deg, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f38181",endColorstr="#fce38a",GradientType=1);
   height: 1000px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .gradient .container {
@@ -50,11 +52,6 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .menu {
@@ -134,7 +131,7 @@ a.menu-btn:hover:after {
 }
 
 .menu-svg-list li:nth-child(2) {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .hamburger {
@@ -169,7 +166,7 @@ a.menu-btn:hover:after {
 }
 
 .hamburger span:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .hamburger span:nth-child(2),
@@ -406,12 +403,9 @@ a.menu-btn:hover:after {
   left: 0;
   z-index: 2;
   opacity: 0;
-  background: rgba(243, 129, 129, .9);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243, 129, 129, 1)), color-stop(100%, rgba(252, 227, 138, .9)));
-  background: -o-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
-  background: linear-gradient(to bottom, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=0);
+  background: rgb(243, 129, 129, .9);
+  background: linear-gradient(180deg, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f38181",endColorstr="#fce38a",GradientType=1);
 }
 
 .transform-img,
@@ -456,9 +450,6 @@ a.menu-btn:hover:after {
 
 .stats-item {
   padding: 85px 57.7px;
-}
-
-.stats-item {
   border-right: solid 1px #b5eae0;
 }
 
@@ -693,7 +684,7 @@ a.menu-btn:hover:after {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 20px 0px 25px 20px;
+  padding: 20px 0 25px 20px;
 }
 
 .we-do-list-scroll {
@@ -724,7 +715,9 @@ a.menu-btn:hover:after {
 }
 
 .photography-wrapper svg:nth-child(2),
-.we-do-list-wrapper svg:nth-child(2) {
+.we-do-list-wrapper svg:nth-child(2),
+.review>svg,
+.social-items svg {
   cursor: pointer;
 }
 
@@ -746,10 +739,6 @@ a.menu-btn:hover:after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.review>svg {
-  cursor: pointer;
 }
 
 .review-content {
@@ -1225,10 +1214,6 @@ a.menu-btn:hover:after {
   align-items: center;
 }
 
-.social-items svg {
-  cursor: pointer;
-}
-
 .social-items svg:not(:last-child) {
   margin-right: 15px;
 }
@@ -1255,11 +1240,6 @@ a.menu-btn:hover:after {
 }
 
 .footer-form input::-moz-placeholder {
-  font-style: italic;
-  color: #ccc;
-}
-
-.footer-form input:-ms-input-placeholder {
   font-style: italic;
   color: #ccc;
 }
@@ -1624,14 +1604,14 @@ a.menu-btn:hover:after {
     flex-direction: column;
   }
 
-  .progress-wrapper .progress-column-wrapper:nth-child(1) {
-    margin-bottom: 20px;
-  }
-
   .progress-column-wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .progress-wrapper .progress-column-wrapper:nth-child(1) {
+    margin-bottom: 20px;
   }
 
   .progress-column-wrapper .progressbar-wrapper:nth-child(1) {
@@ -1672,12 +1652,12 @@ a.menu-btn:hover:after {
     margin-bottom: 35px;
   }
 
-  .stats-line:nth-child(2) .stats-item:nth-child(1) {
-    border-left: solid 1px #b5eae0;
-  }
-
   .stats-item {
     padding: 0 20px;
+  }
+
+  .stats-line:nth-child(2) .stats-item:nth-child(1) {
+    border-left: solid 1px #b5eae0;
   }
 
   .stats-item h2 {
@@ -2109,15 +2089,19 @@ a.menu-btn:hover:after {
     font-size: 44px;
   }
 
-  .stats-line:nth-child(1) {
-    margin-bottom: 0;
-  }
-
   .stats-line {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .stats-line:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .stats-item {
+    border: none;
   }
 
   .stats-line:nth-child(1) .stats-item:nth-child(1),
@@ -2128,10 +2112,6 @@ a.menu-btn:hover:after {
   .stats-line:nth-child(1) .stats-item,
   .stats-line:nth-child(2) .stats-item:nth-child(1) {
     margin-bottom: 25px;
-  }
-
-  .stats-item {
-    border: none;
   }
 
   .services-card {
