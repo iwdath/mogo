@@ -720,7 +720,7 @@ a.menu-btn:hover::after {
 
 .photography-wrapper svg:nth-child(2),
 .we-do-list-wrapper svg:nth-child(2),
-.review > svg,
+.review>svg,
 .social-items svg {
   cursor: pointer;
 }
@@ -1067,7 +1067,7 @@ a.menu-btn:hover::after {
   color: #333;
 }
 
-.latest-blog > p {
+.latest-blog>p {
   font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -1163,7 +1163,7 @@ a.menu-btn:hover::after {
   color: #ccc;
 }
 
-.footer-credits > p {
+.footer-credits>p {
   margin-bottom: 45px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
