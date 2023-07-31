@@ -31,8 +31,8 @@ a {
 .gradient {
   height: 1000px;
   background: rgb(243, 129, 129, .9);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
   background: -o-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
   background: linear-gradient(180deg, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=1);
 }
@@ -405,8 +405,8 @@ a.menu-btn:hover::after {
   width: 100%;
   height: 100%;
   background: rgb(243, 129, 129, .9);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
   background: -o-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, .9)), to(rgba(252, 227, 138, .9)));
   background: linear-gradient(180deg, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
   opacity: 0;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=1);
