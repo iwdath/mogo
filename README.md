@@ -1,1 +1,1 @@
-# MoGo: My fourth web-practice.
+# MoGo: practice #4 [Responsive Web]
