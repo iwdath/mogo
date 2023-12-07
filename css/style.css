@@ -26,7 +26,7 @@ a {
 
 .header {
   height: 1000px;
-  background: url('../img/header-bg.jpg') no-repeat top;
+  background: url("../img/header-bg.jpg") no-repeat top;
 }
 
 .gradient {
@@ -37,7 +37,7 @@ a {
   background: -webkit-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
   background: -moz-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
   background: linear-gradient(180deg, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f38181", endColorstr="#fce38a", GradientType=1);
 }
 
 .container {
@@ -137,7 +137,7 @@ a.menu-btn:hover {
 }
 
 a.menu-btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -12px;
@@ -266,7 +266,7 @@ a.menu-btn:hover::after {
 }
 
 .header-title h2 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-size: 72px;
 }
@@ -396,7 +396,7 @@ a.menu-btn:hover::after {
 
 .section-title h3 {
   margin-bottom: 12px;
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
@@ -472,7 +472,7 @@ a.menu-btn:hover::after {
   background: -moz-linear-gradient(top, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
   background: linear-gradient(180deg, rgba(243, 129, 129, .9) 0%, rgba(252, 227, 138, .9) 100%);
   opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f38181', endColorstr='#fce38a', GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f38181", endColorstr="#fce38a", GradientType=1);
 }
 
 .transform-img,
@@ -629,7 +629,7 @@ a.menu-btn:hover::after {
 }
 
 .design-img {
-  background: url('../img/design-bg.jpg') no-repeat top;
+  background: url("../img/design-bg.jpg") no-repeat top;
 }
 
 .design-bg {
@@ -925,7 +925,7 @@ a.menu-btn:hover::after {
 }
 
 .review-author h3 {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-size: 24px;
   color: #333;
@@ -1034,7 +1034,7 @@ a.menu-btn:hover::after {
 
 .work-bg-img {
   height: 780px;
-  background: url('../img/work-bg.jpg') no-repeat top;
+  background: url("../img/work-bg.jpg") no-repeat top;
 }
 
 .second-review-icon {
@@ -1052,7 +1052,7 @@ a.menu-btn:hover::after {
 }
 
 .clients-img {
-  background: url('../img/clients-bg.jpg') no-repeat top;
+  background: url("../img/clients-bg.jpg") no-repeat top;
 }
 
 .clients-bg {
@@ -1291,7 +1291,7 @@ a.menu-btn:hover::after {
 }
 
 .map-img {
-  background: url('../img/map-bg.jpg') no-repeat top;
+  background: url("../img/map-bg.jpg") no-repeat top;
 }
 
 .map-bg {
