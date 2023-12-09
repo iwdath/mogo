@@ -1,1 +1,0 @@
-# MoGo: practice #4 [Responsive Web]
